@@ -1,0 +1,1527 @@
+=====Input Params=====
+numThread(4),padding(50),maxSideLen(1024),boxScoreThresh(0.600000),boxThresh(0.300000),unClipRatio(2.000000),doAngle(1),mostAngle(1)
+=====Init Models=====
+--- Init DbNet ---
+--- Init AngleNet ---
+--- Init CrnnNet ---
+Init Models Success!
+=====Start detect=====
+ScaleParam(sw:740,sh:740,dw:736,dh:736,0.994595,0.994595)
+---------- step: dbNet getTextBoxes ----------
+dbNetTime(72.575400ms)
+TextBox[0](+padding)[score(0.968335),[x: 438, y: 40], [x: 691, y: 298], [x: 625, y: 363], [x: 372, y: 105]]
+TextBox[1](+padding)[score(0.634923),[x: 304, y: 94], [x: 319, y: 99], [x: 314, y: 114], [x: 299, y: 109]]
+TextBox[2](+padding)[score(0.965490),[x: 263, y: 111], [x: 572, y: 458], [x: 496, y: 526], [x: 188, y: 179]]
+TextBox[3](+padding)[score(0.814587),[x: 163, y: 229], [x: 176, y: 232], [x: 172, y: 246], [x: 159, y: 243]]
+TextBox[4](+padding)[score(0.963871),[x: 202, y: 217], [x: 314, y: 334], [x: 258, y: 390], [x: 145, y: 272]]
+TextBox[5](+padding)[score(0.891910),[x: 456, y: 236], [x: 505, y: 273], [x: 480, y: 305], [x: 431, y: 268]]
+TextBox[6](+padding)[score(0.954613),[x: 116, y: 218], [x: 258, y: 404], [x: 172, y: 469], [x: 31, y: 282]]
+TextBox[7](+padding)[score(0.919118),[x: 510, y: 322], [x: 576, y: 322], [x: 576, y: 380], [x: 510, y: 380]]
+TextBox[8](+padding)[score(0.958918),[x: 280, y: 289], [x: 492, y: 526], [x: 415, y: 595], [x: 203, y: 357]]
+TextBox[9](+padding)[score(0.942910),[x: 568, y: 338], [x: 666, y: 425], [x: 626, y: 471], [x: 527, y: 384]]
+TextBox[10](+padding)[score(0.966728),[x: 220, y: 398], [x: 306, y: 502], [x: 255, y: 544], [x: 168, y: 440]]
+---------- step: drawTextBoxes ----------
+---------- step: angleNet getAngles ----------
+angle[0][index(1), score(0.999955), time(42.629000ms)]
+angle[1][index(1), score(0.999242), time(16.651100ms)]
+angle[2][index(1), score(0.999987), time(11.255400ms)]
+angle[3][index(1), score(0.998059), time(45.593600ms)]
+angle[4][index(1), score(0.999786), time(10.686500ms)]
+angle[5][index(1), score(0.999949), time(11.131900ms)]
+angle[6][index(1), score(0.999988), time(61.245500ms)]
+angle[7][index(1), score(0.999956), time(11.583600ms)]
+angle[8][index(1), score(0.999952), time(3.887200ms)]
+angle[9][index(1), score(0.999999), time(53.178200ms)]
+angle[10][index(1), score(0.999999), time(11.134400ms)]
+---------- step: crnnNet getTextLine ----------
+textLine[0](专业查性别)
+textScores[0]{0.999985 ,0.999461 ,0.998364 ,0.99977 ,0.997252}
+crnnTime[0](39.781400ms)
+textLine[1](A)
+textScores[1]{0.257927}
+crnnTime[1](32.654900ms)
+textLine[2](专业鉴定B超单)
+textScores[2]{0.999959 ,0.999269 ,0.999507 ,0.999311 ,0.995251 ,0.565721 ,0.99951}
+crnnTime[2](30.348400ms)
+textLine[3](名)
+textScores[3]{0.0533817}
+crnnTime[3](28.906800ms)
+textLine[4](超仪)
+textScores[4]{0.608896 ,0.973326}
+crnnTime[4](35.710700ms)
+textLine[5](日邮)
+textScores[5]{0.320443 ,0.300745}
+crnnTime[5](26.344700ms)
+textLine[6](加微信)
+textScores[6]{0.999302 ,0.998028 ,0.994892}
+crnnTime[6](21.240300ms)
+textLine[7](1)
+textScores[7]{0.0599507}
+crnnTime[7](34.334100ms)
+textLine[8](义器查性别)
+textScores[8]{0.944378 ,0.999552 ,0.995717 ,0.822369 ,0.990277}
+crnnTime[8](27.529400ms)
+textLine[9](可邮寄)
+textScores[9]{0.36689 ,0.996735 ,0.985415}
+crnnTime[9](13.493000ms)
+textLine[10](eee)
+textScores[10]{0.86527 ,0.991603 ,0.990645}
+crnnTime[10](33.177100ms)
+=====End detect=====
+FullDetectTime(275.480700ms)
+专业查性别
+A
+专业鉴定B超单
+名
+超仪
+日邮
+加微信
+1
+义器查性别
+可邮寄
+eee
+
+=====Start detect=====
+ScaleParam(sw:740,sh:740,dw:736,dh:736,0.994595,0.994595)
+---------- step: dbNet getTextBoxes ----------
+dbNetTime(43.370800ms)
+TextBox[0](+padding)[score(0.968335),[x: 438, y: 40], [x: 691, y: 298], [x: 625, y: 363], [x: 372, y: 105]]
+TextBox[1](+padding)[score(0.634923),[x: 304, y: 94], [x: 319, y: 99], [x: 314, y: 114], [x: 299, y: 109]]
+TextBox[2](+padding)[score(0.965490),[x: 263, y: 111], [x: 572, y: 458], [x: 496, y: 526], [x: 188, y: 179]]
+TextBox[3](+padding)[score(0.814587),[x: 163, y: 229], [x: 176, y: 232], [x: 172, y: 246], [x: 159, y: 243]]
+TextBox[4](+padding)[score(0.963871),[x: 202, y: 217], [x: 314, y: 334], [x: 258, y: 390], [x: 145, y: 272]]
+TextBox[5](+padding)[score(0.891910),[x: 456, y: 236], [x: 505, y: 273], [x: 480, y: 305], [x: 431, y: 268]]
+TextBox[6](+padding)[score(0.954613),[x: 116, y: 218], [x: 258, y: 404], [x: 172, y: 469], [x: 31, y: 282]]
+TextBox[7](+padding)[score(0.919118),[x: 510, y: 322], [x: 576, y: 322], [x: 576, y: 380], [x: 510, y: 380]]
+TextBox[8](+padding)[score(0.958918),[x: 280, y: 289], [x: 492, y: 526], [x: 415, y: 595], [x: 203, y: 357]]
+TextBox[9](+padding)[score(0.942910),[x: 568, y: 338], [x: 666, y: 425], [x: 626, y: 471], [x: 527, y: 384]]
+TextBox[10](+padding)[score(0.966728),[x: 220, y: 398], [x: 306, y: 502], [x: 255, y: 544], [x: 168, y: 440]]
+---------- step: drawTextBoxes ----------
+---------- step: angleNet getAngles ----------
+angle[0][index(1), score(0.999955), time(9.090300ms)]
+angle[1][index(1), score(0.999242), time(8.244500ms)]
+angle[2][index(1), score(0.999987), time(4.921400ms)]
+angle[3][index(1), score(0.998059), time(4.428500ms)]
+angle[4][index(1), score(0.999786), time(7.935700ms)]
+angle[5][index(1), score(0.999949), time(3.274800ms)]
+angle[6][index(1), score(0.999988), time(7.341900ms)]
+angle[7][index(1), score(0.999956), time(6.644500ms)]
+angle[8][index(1), score(0.999952), time(5.577800ms)]
+angle[9][index(1), score(0.999999), time(2.263800ms)]
+angle[10][index(1), score(0.999999), time(8.582400ms)]
+---------- step: crnnNet getTextLine ----------
+textLine[0](专业查性别)
+textScores[0]{0.999985 ,0.999461 ,0.998364 ,0.99977 ,0.997252}
+crnnTime[0](14.487100ms)
+textLine[1](A)
+textScores[1]{0.257927}
+crnnTime[1](13.780300ms)
+textLine[2](专业鉴定B超单)
+textScores[2]{0.999959 ,0.999269 ,0.999507 ,0.999311 ,0.995251 ,0.565721 ,0.99951}
+crnnTime[2](19.106100ms)
+textLine[3](名)
+textScores[3]{0.0533817}
+crnnTime[3](3.716000ms)
+textLine[4](超仪)
+textScores[4]{0.608896 ,0.973326}
+crnnTime[4](17.436600ms)
+textLine[5](日邮)
+textScores[5]{0.320443 ,0.300745}
+crnnTime[5](15.237900ms)
+textLine[6](加微信)
+textScores[6]{0.999302 ,0.998028 ,0.994892}
+crnnTime[6](8.036100ms)
+textLine[7](1)
+textScores[7]{0.0599507}
+crnnTime[7](16.196600ms)
+textLine[8](义器查性别)
+textScores[8]{0.944378 ,0.999552 ,0.995717 ,0.822369 ,0.990277}
+crnnTime[8](17.433000ms)
+textLine[9](可邮寄)
+textScores[9]{0.36689 ,0.996735 ,0.985415}
+crnnTime[9](17.620200ms)
+textLine[10](eee)
+textScores[10]{0.86527 ,0.991603 ,0.990645}
+crnnTime[10](15.285200ms)
+=====End detect=====
+FullDetectTime(133.438600ms)
+专业查性别
+A
+专业鉴定B超单
+名
+超仪
+日邮
+加微信
+1
+义器查性别
+可邮寄
+eee
+
+=====Start detect=====
+ScaleParam(sw:740,sh:740,dw:736,dh:736,0.994595,0.994595)
+---------- step: dbNet getTextBoxes ----------
+dbNetTime(40.551900ms)
+TextBox[0](+padding)[score(0.968335),[x: 438, y: 40], [x: 691, y: 298], [x: 625, y: 363], [x: 372, y: 105]]
+TextBox[1](+padding)[score(0.634923),[x: 304, y: 94], [x: 319, y: 99], [x: 314, y: 114], [x: 299, y: 109]]
+TextBox[2](+padding)[score(0.965490),[x: 263, y: 111], [x: 572, y: 458], [x: 496, y: 526], [x: 188, y: 179]]
+TextBox[3](+padding)[score(0.814587),[x: 163, y: 229], [x: 176, y: 232], [x: 172, y: 246], [x: 159, y: 243]]
+TextBox[4](+padding)[score(0.963871),[x: 202, y: 217], [x: 314, y: 334], [x: 258, y: 390], [x: 145, y: 272]]
+TextBox[5](+padding)[score(0.891910),[x: 456, y: 236], [x: 505, y: 273], [x: 480, y: 305], [x: 431, y: 268]]
+TextBox[6](+padding)[score(0.954613),[x: 116, y: 218], [x: 258, y: 404], [x: 172, y: 469], [x: 31, y: 282]]
+TextBox[7](+padding)[score(0.919118),[x: 510, y: 322], [x: 576, y: 322], [x: 576, y: 380], [x: 510, y: 380]]
+TextBox[8](+padding)[score(0.958918),[x: 280, y: 289], [x: 492, y: 526], [x: 415, y: 595], [x: 203, y: 357]]
+TextBox[9](+padding)[score(0.942910),[x: 568, y: 338], [x: 666, y: 425], [x: 626, y: 471], [x: 527, y: 384]]
+TextBox[10](+padding)[score(0.966728),[x: 220, y: 398], [x: 306, y: 502], [x: 255, y: 544], [x: 168, y: 440]]
+---------- step: drawTextBoxes ----------
+---------- step: angleNet getAngles ----------
+angle[0][index(1), score(0.999955), time(4.361000ms)]
+angle[1][index(1), score(0.999242), time(8.575500ms)]
+angle[2][index(1), score(0.999987), time(7.135100ms)]
+angle[3][index(1), score(0.998059), time(2.221100ms)]
+angle[4][index(1), score(0.999786), time(8.706000ms)]
+angle[5][index(1), score(0.999949), time(6.989900ms)]
+angle[6][index(1), score(0.999988), time(8.933200ms)]
+angle[7][index(1), score(0.999956), time(7.282900ms)]
+angle[8][index(1), score(0.999952), time(5.755500ms)]
+angle[9][index(1), score(0.999999), time(6.650700ms)]
+angle[10][index(1), score(0.999999), time(8.026400ms)]
+---------- step: crnnNet getTextLine ----------
+textLine[0](专业查性别)
+textScores[0]{0.999985 ,0.999461 ,0.998364 ,0.99977 ,0.997252}
+crnnTime[0](17.355300ms)
+textLine[1](A)
+textScores[1]{0.257927}
+crnnTime[1](13.775100ms)
+textLine[2](专业鉴定B超单)
+textScores[2]{0.999959 ,0.999269 ,0.999507 ,0.999311 ,0.995251 ,0.565721 ,0.99951}
+crnnTime[2](11.137400ms)
+textLine[3](名)
+textScores[3]{0.0533817}
+crnnTime[3](4.053000ms)
+textLine[4](超仪)
+textScores[4]{0.608896 ,0.973326}
+crnnTime[4](16.599500ms)
+textLine[5](日邮)
+textScores[5]{0.320443 ,0.300745}
+crnnTime[5](14.764400ms)
+textLine[6](加微信)
+textScores[6]{0.999302 ,0.998028 ,0.994892}
+crnnTime[6](11.463800ms)
+textLine[7](1)
+textScores[7]{0.0599507}
+crnnTime[7](15.344300ms)
+textLine[8](义器查性别)
+textScores[8]{0.944378 ,0.999552 ,0.995717 ,0.822369 ,0.990277}
+crnnTime[8](21.213500ms)
+textLine[9](可邮寄)
+textScores[9]{0.36689 ,0.996735 ,0.985415}
+crnnTime[9](8.482100ms)
+textLine[10](eee)
+textScores[10]{0.86527 ,0.991603 ,0.990645}
+crnnTime[10](14.562400ms)
+=====End detect=====
+FullDetectTime(138.583300ms)
+专业查性别
+A
+专业鉴定B超单
+名
+超仪
+日邮
+加微信
+1
+义器查性别
+可邮寄
+eee
+
+=====Start detect=====
+ScaleParam(sw:740,sh:740,dw:736,dh:736,0.994595,0.994595)
+---------- step: dbNet getTextBoxes ----------
+dbNetTime(43.254600ms)
+TextBox[0](+padding)[score(0.968335),[x: 438, y: 40], [x: 691, y: 298], [x: 625, y: 363], [x: 372, y: 105]]
+TextBox[1](+padding)[score(0.634923),[x: 304, y: 94], [x: 319, y: 99], [x: 314, y: 114], [x: 299, y: 109]]
+TextBox[2](+padding)[score(0.965490),[x: 263, y: 111], [x: 572, y: 458], [x: 496, y: 526], [x: 188, y: 179]]
+TextBox[3](+padding)[score(0.814587),[x: 163, y: 229], [x: 176, y: 232], [x: 172, y: 246], [x: 159, y: 243]]
+TextBox[4](+padding)[score(0.963871),[x: 202, y: 217], [x: 314, y: 334], [x: 258, y: 390], [x: 145, y: 272]]
+TextBox[5](+padding)[score(0.891910),[x: 456, y: 236], [x: 505, y: 273], [x: 480, y: 305], [x: 431, y: 268]]
+TextBox[6](+padding)[score(0.954613),[x: 116, y: 218], [x: 258, y: 404], [x: 172, y: 469], [x: 31, y: 282]]
+TextBox[7](+padding)[score(0.919118),[x: 510, y: 322], [x: 576, y: 322], [x: 576, y: 380], [x: 510, y: 380]]
+TextBox[8](+padding)[score(0.958918),[x: 280, y: 289], [x: 492, y: 526], [x: 415, y: 595], [x: 203, y: 357]]
+TextBox[9](+padding)[score(0.942910),[x: 568, y: 338], [x: 666, y: 425], [x: 626, y: 471], [x: 527, y: 384]]
+TextBox[10](+padding)[score(0.966728),[x: 220, y: 398], [x: 306, y: 502], [x: 255, y: 544], [x: 168, y: 440]]
+---------- step: drawTextBoxes ----------
+---------- step: angleNet getAngles ----------
+angle[0][index(1), score(0.999955), time(6.306700ms)]
+angle[1][index(1), score(0.999242), time(3.489100ms)]
+angle[2][index(1), score(0.999987), time(5.324000ms)]
+angle[3][index(1), score(0.998059), time(4.399100ms)]
+angle[4][index(1), score(0.999786), time(8.756900ms)]
+angle[5][index(1), score(0.999949), time(6.345900ms)]
+angle[6][index(1), score(0.999988), time(8.141600ms)]
+angle[7][index(1), score(0.999956), time(9.125900ms)]
+angle[8][index(1), score(0.999952), time(4.413900ms)]
+angle[9][index(1), score(0.999999), time(2.495200ms)]
+angle[10][index(1), score(0.999999), time(9.122700ms)]
+---------- step: crnnNet getTextLine ----------
+textLine[0](专业查性别)
+textScores[0]{0.999985 ,0.999461 ,0.998364 ,0.99977 ,0.997252}
+crnnTime[0](11.651100ms)
+textLine[1](A)
+textScores[1]{0.257927}
+crnnTime[1](15.370500ms)
+textLine[2](专业鉴定B超单)
+textScores[2]{0.999959 ,0.999269 ,0.999507 ,0.999311 ,0.995251 ,0.565721 ,0.99951}
+crnnTime[2](17.715600ms)
+textLine[3](名)
+textScores[3]{0.0533817}
+crnnTime[3](14.133600ms)
+textLine[4](超仪)
+textScores[4]{0.608896 ,0.973326}
+crnnTime[4](17.350900ms)
+textLine[5](日邮)
+textScores[5]{0.320443 ,0.300745}
+crnnTime[5](16.327500ms)
+textLine[6](加微信)
+textScores[6]{0.999302 ,0.998028 ,0.994892}
+crnnTime[6](5.359700ms)
+textLine[7](1)
+textScores[7]{0.0599507}
+crnnTime[7](17.456100ms)
+textLine[8](义器查性别)
+textScores[8]{0.944378 ,0.999552 ,0.995717 ,0.822369 ,0.990277}
+crnnTime[8](15.598300ms)
+textLine[9](可邮寄)
+textScores[9]{0.36689 ,0.996735 ,0.985415}
+crnnTime[9](19.233600ms)
+textLine[10](eee)
+textScores[10]{0.86527 ,0.991603 ,0.990645}
+crnnTime[10](14.239500ms)
+=====End detect=====
+FullDetectTime(135.714200ms)
+专业查性别
+A
+专业鉴定B超单
+名
+超仪
+日邮
+加微信
+1
+义器查性别
+可邮寄
+eee
+
+=====Start detect=====
+ScaleParam(sw:740,sh:740,dw:736,dh:736,0.994595,0.994595)
+---------- step: dbNet getTextBoxes ----------
+dbNetTime(40.936900ms)
+TextBox[0](+padding)[score(0.968335),[x: 438, y: 40], [x: 691, y: 298], [x: 625, y: 363], [x: 372, y: 105]]
+TextBox[1](+padding)[score(0.634923),[x: 304, y: 94], [x: 319, y: 99], [x: 314, y: 114], [x: 299, y: 109]]
+TextBox[2](+padding)[score(0.965490),[x: 263, y: 111], [x: 572, y: 458], [x: 496, y: 526], [x: 188, y: 179]]
+TextBox[3](+padding)[score(0.814587),[x: 163, y: 229], [x: 176, y: 232], [x: 172, y: 246], [x: 159, y: 243]]
+TextBox[4](+padding)[score(0.963871),[x: 202, y: 217], [x: 314, y: 334], [x: 258, y: 390], [x: 145, y: 272]]
+TextBox[5](+padding)[score(0.891910),[x: 456, y: 236], [x: 505, y: 273], [x: 480, y: 305], [x: 431, y: 268]]
+TextBox[6](+padding)[score(0.954613),[x: 116, y: 218], [x: 258, y: 404], [x: 172, y: 469], [x: 31, y: 282]]
+TextBox[7](+padding)[score(0.919118),[x: 510, y: 322], [x: 576, y: 322], [x: 576, y: 380], [x: 510, y: 380]]
+TextBox[8](+padding)[score(0.958918),[x: 280, y: 289], [x: 492, y: 526], [x: 415, y: 595], [x: 203, y: 357]]
+TextBox[9](+padding)[score(0.942910),[x: 568, y: 338], [x: 666, y: 425], [x: 626, y: 471], [x: 527, y: 384]]
+TextBox[10](+padding)[score(0.966728),[x: 220, y: 398], [x: 306, y: 502], [x: 255, y: 544], [x: 168, y: 440]]
+---------- step: drawTextBoxes ----------
+---------- step: angleNet getAngles ----------
+angle[0][index(1), score(0.999955), time(8.049100ms)]
+angle[1][index(1), score(0.999242), time(4.772400ms)]
+angle[2][index(1), score(0.999987), time(5.931400ms)]
+angle[3][index(1), score(0.998059), time(2.531700ms)]
+angle[4][index(1), score(0.999786), time(7.157300ms)]
+angle[5][index(1), score(0.999949), time(6.837900ms)]
+angle[6][index(1), score(0.999988), time(6.196800ms)]
+angle[7][index(1), score(0.999956), time(8.455600ms)]
+angle[8][index(1), score(0.999952), time(6.448900ms)]
+angle[9][index(1), score(0.999999), time(4.425200ms)]
+angle[10][index(1), score(0.999999), time(6.874400ms)]
+---------- step: crnnNet getTextLine ----------
+textLine[0](专业查性别)
+textScores[0]{0.999985 ,0.999461 ,0.998364 ,0.99977 ,0.997252}
+crnnTime[0](18.524100ms)
+textLine[1](A)
+textScores[1]{0.257927}
+crnnTime[1](18.274700ms)
+textLine[2](专业鉴定B超单)
+textScores[2]{0.999959 ,0.999269 ,0.999507 ,0.999311 ,0.995251 ,0.565721 ,0.99951}
+crnnTime[2](12.411600ms)
+textLine[3](名)
+textScores[3]{0.0533817}
+crnnTime[3](7.997400ms)
+textLine[4](超仪)
+textScores[4]{0.608896 ,0.973326}
+crnnTime[4](16.253800ms)
+textLine[5](日邮)
+textScores[5]{0.320443 ,0.300745}
+crnnTime[5](8.579000ms)
+textLine[6](加微信)
+textScores[6]{0.999302 ,0.998028 ,0.994892}
+crnnTime[6](12.943000ms)
+textLine[7](1)
+textScores[7]{0.0599507}
+crnnTime[7](15.058900ms)
+textLine[8](义器查性别)
+textScores[8]{0.944378 ,0.999552 ,0.995717 ,0.822369 ,0.990277}
+crnnTime[8](14.988700ms)
+textLine[9](可邮寄)
+textScores[9]{0.36689 ,0.996735 ,0.985415}
+crnnTime[9](4.737000ms)
+textLine[10](eee)
+textScores[10]{0.86527 ,0.991603 ,0.990645}
+crnnTime[10](17.386900ms)
+=====End detect=====
+FullDetectTime(135.304000ms)
+专业查性别
+A
+专业鉴定B超单
+名
+超仪
+日邮
+加微信
+1
+义器查性别
+可邮寄
+eee
+
+=====Start detect=====
+ScaleParam(sw:740,sh:740,dw:736,dh:736,0.994595,0.994595)
+---------- step: dbNet getTextBoxes ----------
+dbNetTime(40.331400ms)
+TextBox[0](+padding)[score(0.968335),[x: 438, y: 40], [x: 691, y: 298], [x: 625, y: 363], [x: 372, y: 105]]
+TextBox[1](+padding)[score(0.634923),[x: 304, y: 94], [x: 319, y: 99], [x: 314, y: 114], [x: 299, y: 109]]
+TextBox[2](+padding)[score(0.965490),[x: 263, y: 111], [x: 572, y: 458], [x: 496, y: 526], [x: 188, y: 179]]
+TextBox[3](+padding)[score(0.814587),[x: 163, y: 229], [x: 176, y: 232], [x: 172, y: 246], [x: 159, y: 243]]
+TextBox[4](+padding)[score(0.963871),[x: 202, y: 217], [x: 314, y: 334], [x: 258, y: 390], [x: 145, y: 272]]
+TextBox[5](+padding)[score(0.891910),[x: 456, y: 236], [x: 505, y: 273], [x: 480, y: 305], [x: 431, y: 268]]
+TextBox[6](+padding)[score(0.954613),[x: 116, y: 218], [x: 258, y: 404], [x: 172, y: 469], [x: 31, y: 282]]
+TextBox[7](+padding)[score(0.919118),[x: 510, y: 322], [x: 576, y: 322], [x: 576, y: 380], [x: 510, y: 380]]
+TextBox[8](+padding)[score(0.958918),[x: 280, y: 289], [x: 492, y: 526], [x: 415, y: 595], [x: 203, y: 357]]
+TextBox[9](+padding)[score(0.942910),[x: 568, y: 338], [x: 666, y: 425], [x: 626, y: 471], [x: 527, y: 384]]
+TextBox[10](+padding)[score(0.966728),[x: 220, y: 398], [x: 306, y: 502], [x: 255, y: 544], [x: 168, y: 440]]
+---------- step: drawTextBoxes ----------
+---------- step: angleNet getAngles ----------
+angle[0][index(1), score(0.999955), time(4.895100ms)]
+angle[1][index(1), score(0.999242), time(7.737800ms)]
+angle[2][index(1), score(0.999987), time(5.911900ms)]
+angle[3][index(1), score(0.998059), time(7.103700ms)]
+angle[4][index(1), score(0.999786), time(7.588200ms)]
+angle[5][index(1), score(0.999949), time(6.355400ms)]
+angle[6][index(1), score(0.999988), time(9.035900ms)]
+angle[7][index(1), score(0.999956), time(7.307500ms)]
+angle[8][index(1), score(0.999952), time(6.882800ms)]
+angle[9][index(1), score(0.999999), time(2.549400ms)]
+angle[10][index(1), score(0.999999), time(8.221000ms)]
+---------- step: crnnNet getTextLine ----------
+textLine[0](专业查性别)
+textScores[0]{0.999985 ,0.999461 ,0.998364 ,0.99977 ,0.997252}
+crnnTime[0](16.122300ms)
+textLine[1](A)
+textScores[1]{0.257927}
+crnnTime[1](13.008800ms)
+textLine[2](专业鉴定B超单)
+textScores[2]{0.999959 ,0.999269 ,0.999507 ,0.999311 ,0.995251 ,0.565721 ,0.99951}
+crnnTime[2](20.116300ms)
+textLine[3](名)
+textScores[3]{0.0533817}
+crnnTime[3](9.408200ms)
+textLine[4](超仪)
+textScores[4]{0.608896 ,0.973326}
+crnnTime[4](15.893000ms)
+textLine[5](日邮)
+textScores[5]{0.320443 ,0.300745}
+crnnTime[5](12.236900ms)
+textLine[6](加微信)
+textScores[6]{0.999302 ,0.998028 ,0.994892}
+crnnTime[6](20.396300ms)
+textLine[7](1)
+textScores[7]{0.0599507}
+crnnTime[7](21.184900ms)
+textLine[8](义器查性别)
+textScores[8]{0.944378 ,0.999552 ,0.995717 ,0.822369 ,0.990277}
+crnnTime[8](12.850000ms)
+textLine[9](可邮寄)
+textScores[9]{0.36689 ,0.996735 ,0.985415}
+crnnTime[9](5.411300ms)
+textLine[10](eee)
+textScores[10]{0.86527 ,0.991603 ,0.990645}
+crnnTime[10](28.527600ms)
+=====End detect=====
+FullDetectTime(141.636800ms)
+专业查性别
+A
+专业鉴定B超单
+名
+超仪
+日邮
+加微信
+1
+义器查性别
+可邮寄
+eee
+
+=====Start detect=====
+ScaleParam(sw:740,sh:740,dw:736,dh:736,0.994595,0.994595)
+---------- step: dbNet getTextBoxes ----------
+dbNetTime(41.234400ms)
+TextBox[0](+padding)[score(0.968335),[x: 438, y: 40], [x: 691, y: 298], [x: 625, y: 363], [x: 372, y: 105]]
+TextBox[1](+padding)[score(0.634923),[x: 304, y: 94], [x: 319, y: 99], [x: 314, y: 114], [x: 299, y: 109]]
+TextBox[2](+padding)[score(0.965490),[x: 263, y: 111], [x: 572, y: 458], [x: 496, y: 526], [x: 188, y: 179]]
+TextBox[3](+padding)[score(0.814587),[x: 163, y: 229], [x: 176, y: 232], [x: 172, y: 246], [x: 159, y: 243]]
+TextBox[4](+padding)[score(0.963871),[x: 202, y: 217], [x: 314, y: 334], [x: 258, y: 390], [x: 145, y: 272]]
+TextBox[5](+padding)[score(0.891910),[x: 456, y: 236], [x: 505, y: 273], [x: 480, y: 305], [x: 431, y: 268]]
+TextBox[6](+padding)[score(0.954613),[x: 116, y: 218], [x: 258, y: 404], [x: 172, y: 469], [x: 31, y: 282]]
+TextBox[7](+padding)[score(0.919118),[x: 510, y: 322], [x: 576, y: 322], [x: 576, y: 380], [x: 510, y: 380]]
+TextBox[8](+padding)[score(0.958918),[x: 280, y: 289], [x: 492, y: 526], [x: 415, y: 595], [x: 203, y: 357]]
+TextBox[9](+padding)[score(0.942910),[x: 568, y: 338], [x: 666, y: 425], [x: 626, y: 471], [x: 527, y: 384]]
+TextBox[10](+padding)[score(0.966728),[x: 220, y: 398], [x: 306, y: 502], [x: 255, y: 544], [x: 168, y: 440]]
+---------- step: drawTextBoxes ----------
+---------- step: angleNet getAngles ----------
+angle[0][index(1), score(0.999955), time(4.236100ms)]
+angle[1][index(1), score(0.999242), time(8.389900ms)]
+angle[2][index(1), score(0.999987), time(7.777600ms)]
+angle[3][index(1), score(0.998059), time(2.342900ms)]
+angle[4][index(1), score(0.999786), time(8.208500ms)]
+angle[5][index(1), score(0.999949), time(7.785700ms)]
+angle[6][index(1), score(0.999988), time(6.238000ms)]
+angle[7][index(1), score(0.999956), time(8.493000ms)]
+angle[8][index(1), score(0.999952), time(7.444000ms)]
+angle[9][index(1), score(0.999999), time(8.230700ms)]
+angle[10][index(1), score(0.999999), time(8.368000ms)]
+---------- step: crnnNet getTextLine ----------
+textLine[0](专业查性别)
+textScores[0]{0.999985 ,0.999461 ,0.998364 ,0.99977 ,0.997252}
+crnnTime[0](12.994000ms)
+textLine[1](A)
+textScores[1]{0.257927}
+crnnTime[1](13.746500ms)
+textLine[2](专业鉴定B超单)
+textScores[2]{0.999959 ,0.999269 ,0.999507 ,0.999311 ,0.995251 ,0.565721 ,0.99951}
+crnnTime[2](16.678300ms)
+textLine[3](名)
+textScores[3]{0.0533817}
+crnnTime[3](15.971300ms)
+textLine[4](超仪)
+textScores[4]{0.608896 ,0.973326}
+crnnTime[4](15.821100ms)
+textLine[5](日邮)
+textScores[5]{0.320443 ,0.300745}
+crnnTime[5](14.399600ms)
+textLine[6](加微信)
+textScores[6]{0.999302 ,0.998028 ,0.994892}
+crnnTime[6](7.101400ms)
+textLine[7](1)
+textScores[7]{0.0599507}
+crnnTime[7](16.045600ms)
+textLine[8](义器查性别)
+textScores[8]{0.944378 ,0.999552 ,0.995717 ,0.822369 ,0.990277}
+crnnTime[8](13.920800ms)
+textLine[9](可邮寄)
+textScores[9]{0.36689 ,0.996735 ,0.985415}
+crnnTime[9](4.607700ms)
+textLine[10](eee)
+textScores[10]{0.86527 ,0.991603 ,0.990645}
+crnnTime[10](15.533700ms)
+=====End detect=====
+FullDetectTime(138.791900ms)
+专业查性别
+A
+专业鉴定B超单
+名
+超仪
+日邮
+加微信
+1
+义器查性别
+可邮寄
+eee
+
+=====Start detect=====
+ScaleParam(sw:740,sh:740,dw:736,dh:736,0.994595,0.994595)
+---------- step: dbNet getTextBoxes ----------
+dbNetTime(43.456100ms)
+TextBox[0](+padding)[score(0.968335),[x: 438, y: 40], [x: 691, y: 298], [x: 625, y: 363], [x: 372, y: 105]]
+TextBox[1](+padding)[score(0.634923),[x: 304, y: 94], [x: 319, y: 99], [x: 314, y: 114], [x: 299, y: 109]]
+TextBox[2](+padding)[score(0.965490),[x: 263, y: 111], [x: 572, y: 458], [x: 496, y: 526], [x: 188, y: 179]]
+TextBox[3](+padding)[score(0.814587),[x: 163, y: 229], [x: 176, y: 232], [x: 172, y: 246], [x: 159, y: 243]]
+TextBox[4](+padding)[score(0.963871),[x: 202, y: 217], [x: 314, y: 334], [x: 258, y: 390], [x: 145, y: 272]]
+TextBox[5](+padding)[score(0.891910),[x: 456, y: 236], [x: 505, y: 273], [x: 480, y: 305], [x: 431, y: 268]]
+TextBox[6](+padding)[score(0.954613),[x: 116, y: 218], [x: 258, y: 404], [x: 172, y: 469], [x: 31, y: 282]]
+TextBox[7](+padding)[score(0.919118),[x: 510, y: 322], [x: 576, y: 322], [x: 576, y: 380], [x: 510, y: 380]]
+TextBox[8](+padding)[score(0.958918),[x: 280, y: 289], [x: 492, y: 526], [x: 415, y: 595], [x: 203, y: 357]]
+TextBox[9](+padding)[score(0.942910),[x: 568, y: 338], [x: 666, y: 425], [x: 626, y: 471], [x: 527, y: 384]]
+TextBox[10](+padding)[score(0.966728),[x: 220, y: 398], [x: 306, y: 502], [x: 255, y: 544], [x: 168, y: 440]]
+---------- step: drawTextBoxes ----------
+---------- step: angleNet getAngles ----------
+angle[0][index(1), score(0.999955), time(4.135000ms)]
+angle[1][index(1), score(0.999242), time(6.082500ms)]
+angle[2][index(1), score(0.999987), time(8.105800ms)]
+angle[3][index(1), score(0.998059), time(8.354800ms)]
+angle[4][index(1), score(0.999786), time(8.363700ms)]
+angle[5][index(1), score(0.999949), time(3.467100ms)]
+angle[6][index(1), score(0.999988), time(2.115200ms)]
+angle[7][index(1), score(0.999956), time(9.662600ms)]
+angle[8][index(1), score(0.999952), time(3.382900ms)]
+angle[9][index(1), score(0.999999), time(6.325100ms)]
+angle[10][index(1), score(0.999999), time(6.935700ms)]
+---------- step: crnnNet getTextLine ----------
+textLine[0](专业查性别)
+textScores[0]{0.999985 ,0.999461 ,0.998364 ,0.99977 ,0.997252}
+crnnTime[0](16.428500ms)
+textLine[1](A)
+textScores[1]{0.257927}
+crnnTime[1](17.237200ms)
+textLine[2](专业鉴定B超单)
+textScores[2]{0.999959 ,0.999269 ,0.999507 ,0.999311 ,0.995251 ,0.565721 ,0.99951}
+crnnTime[2](13.257500ms)
+textLine[3](名)
+textScores[3]{0.0533817}
+crnnTime[3](3.796500ms)
+textLine[4](超仪)
+textScores[4]{0.608896 ,0.973326}
+crnnTime[4](18.099900ms)
+textLine[5](日邮)
+textScores[5]{0.320443 ,0.300745}
+crnnTime[5](7.845100ms)
+textLine[6](加微信)
+textScores[6]{0.999302 ,0.998028 ,0.994892}
+crnnTime[6](10.356900ms)
+textLine[7](1)
+textScores[7]{0.0599507}
+crnnTime[7](14.863500ms)
+textLine[8](义器查性别)
+textScores[8]{0.944378 ,0.999552 ,0.995717 ,0.822369 ,0.990277}
+crnnTime[8](14.306400ms)
+textLine[9](可邮寄)
+textScores[9]{0.36689 ,0.996735 ,0.985415}
+crnnTime[9](8.101000ms)
+textLine[10](eee)
+textScores[10]{0.86527 ,0.991603 ,0.990645}
+crnnTime[10](11.692600ms)
+=====End detect=====
+FullDetectTime(135.151200ms)
+专业查性别
+A
+专业鉴定B超单
+名
+超仪
+日邮
+加微信
+1
+义器查性别
+可邮寄
+eee
+
+=====Start detect=====
+ScaleParam(sw:740,sh:740,dw:736,dh:736,0.994595,0.994595)
+---------- step: dbNet getTextBoxes ----------
+dbNetTime(40.791400ms)
+TextBox[0](+padding)[score(0.968335),[x: 438, y: 40], [x: 691, y: 298], [x: 625, y: 363], [x: 372, y: 105]]
+TextBox[1](+padding)[score(0.634923),[x: 304, y: 94], [x: 319, y: 99], [x: 314, y: 114], [x: 299, y: 109]]
+TextBox[2](+padding)[score(0.965490),[x: 263, y: 111], [x: 572, y: 458], [x: 496, y: 526], [x: 188, y: 179]]
+TextBox[3](+padding)[score(0.814587),[x: 163, y: 229], [x: 176, y: 232], [x: 172, y: 246], [x: 159, y: 243]]
+TextBox[4](+padding)[score(0.963871),[x: 202, y: 217], [x: 314, y: 334], [x: 258, y: 390], [x: 145, y: 272]]
+TextBox[5](+padding)[score(0.891910),[x: 456, y: 236], [x: 505, y: 273], [x: 480, y: 305], [x: 431, y: 268]]
+TextBox[6](+padding)[score(0.954613),[x: 116, y: 218], [x: 258, y: 404], [x: 172, y: 469], [x: 31, y: 282]]
+TextBox[7](+padding)[score(0.919118),[x: 510, y: 322], [x: 576, y: 322], [x: 576, y: 380], [x: 510, y: 380]]
+TextBox[8](+padding)[score(0.958918),[x: 280, y: 289], [x: 492, y: 526], [x: 415, y: 595], [x: 203, y: 357]]
+TextBox[9](+padding)[score(0.942910),[x: 568, y: 338], [x: 666, y: 425], [x: 626, y: 471], [x: 527, y: 384]]
+TextBox[10](+padding)[score(0.966728),[x: 220, y: 398], [x: 306, y: 502], [x: 255, y: 544], [x: 168, y: 440]]
+---------- step: drawTextBoxes ----------
+---------- step: angleNet getAngles ----------
+angle[0][index(1), score(0.999955), time(7.160300ms)]
+angle[1][index(1), score(0.999242), time(6.803900ms)]
+angle[2][index(1), score(0.999987), time(5.362800ms)]
+angle[3][index(1), score(0.998059), time(9.002800ms)]
+angle[4][index(1), score(0.999786), time(6.874800ms)]
+angle[5][index(1), score(0.999949), time(5.377200ms)]
+angle[6][index(1), score(0.999988), time(2.293600ms)]
+angle[7][index(1), score(0.999956), time(8.410400ms)]
+angle[8][index(1), score(0.999952), time(6.864000ms)]
+angle[9][index(1), score(0.999999), time(4.866700ms)]
+angle[10][index(1), score(0.999999), time(7.628800ms)]
+---------- step: crnnNet getTextLine ----------
+textLine[0](专业查性别)
+textScores[0]{0.999985 ,0.999461 ,0.998364 ,0.99977 ,0.997252}
+crnnTime[0](16.411800ms)
+textLine[1](A)
+textScores[1]{0.257927}
+crnnTime[1](17.472800ms)
+textLine[2](专业鉴定B超单)
+textScores[2]{0.999959 ,0.999269 ,0.999507 ,0.999311 ,0.995251 ,0.565721 ,0.99951}
+crnnTime[2](11.360700ms)
+textLine[3](名)
+textScores[3]{0.0533817}
+crnnTime[3](4.010600ms)
+textLine[4](超仪)
+textScores[4]{0.608896 ,0.973326}
+crnnTime[4](15.808800ms)
+textLine[5](日邮)
+textScores[5]{0.320443 ,0.300745}
+crnnTime[5](9.812700ms)
+textLine[6](加微信)
+textScores[6]{0.999302 ,0.998028 ,0.994892}
+crnnTime[6](10.604400ms)
+textLine[7](1)
+textScores[7]{0.0599507}
+crnnTime[7](15.219500ms)
+textLine[8](义器查性别)
+textScores[8]{0.944378 ,0.999552 ,0.995717 ,0.822369 ,0.990277}
+crnnTime[8](13.361000ms)
+textLine[9](可邮寄)
+textScores[9]{0.36689 ,0.996735 ,0.985415}
+crnnTime[9](8.386300ms)
+textLine[10](eee)
+textScores[10]{0.86527 ,0.991603 ,0.990645}
+crnnTime[10](13.555000ms)
+=====End detect=====
+FullDetectTime(132.824000ms)
+专业查性别
+A
+专业鉴定B超单
+名
+超仪
+日邮
+加微信
+1
+义器查性别
+可邮寄
+eee
+
+=====Start detect=====
+ScaleParam(sw:740,sh:740,dw:736,dh:736,0.994595,0.994595)
+---------- step: dbNet getTextBoxes ----------
+dbNetTime(43.167400ms)
+TextBox[0](+padding)[score(0.968335),[x: 438, y: 40], [x: 691, y: 298], [x: 625, y: 363], [x: 372, y: 105]]
+TextBox[1](+padding)[score(0.634923),[x: 304, y: 94], [x: 319, y: 99], [x: 314, y: 114], [x: 299, y: 109]]
+TextBox[2](+padding)[score(0.965490),[x: 263, y: 111], [x: 572, y: 458], [x: 496, y: 526], [x: 188, y: 179]]
+TextBox[3](+padding)[score(0.814587),[x: 163, y: 229], [x: 176, y: 232], [x: 172, y: 246], [x: 159, y: 243]]
+TextBox[4](+padding)[score(0.963871),[x: 202, y: 217], [x: 314, y: 334], [x: 258, y: 390], [x: 145, y: 272]]
+TextBox[5](+padding)[score(0.891910),[x: 456, y: 236], [x: 505, y: 273], [x: 480, y: 305], [x: 431, y: 268]]
+TextBox[6](+padding)[score(0.954613),[x: 116, y: 218], [x: 258, y: 404], [x: 172, y: 469], [x: 31, y: 282]]
+TextBox[7](+padding)[score(0.919118),[x: 510, y: 322], [x: 576, y: 322], [x: 576, y: 380], [x: 510, y: 380]]
+TextBox[8](+padding)[score(0.958918),[x: 280, y: 289], [x: 492, y: 526], [x: 415, y: 595], [x: 203, y: 357]]
+TextBox[9](+padding)[score(0.942910),[x: 568, y: 338], [x: 666, y: 425], [x: 626, y: 471], [x: 527, y: 384]]
+TextBox[10](+padding)[score(0.966728),[x: 220, y: 398], [x: 306, y: 502], [x: 255, y: 544], [x: 168, y: 440]]
+---------- step: drawTextBoxes ----------
+---------- step: angleNet getAngles ----------
+angle[0][index(1), score(0.999955), time(8.517000ms)]
+angle[1][index(1), score(0.999242), time(6.751800ms)]
+angle[2][index(1), score(0.999987), time(5.235900ms)]
+angle[3][index(1), score(0.998059), time(2.356100ms)]
+angle[4][index(1), score(0.999786), time(8.023800ms)]
+angle[5][index(1), score(0.999949), time(6.662900ms)]
+angle[6][index(1), score(0.999988), time(6.490100ms)]
+angle[7][index(1), score(0.999956), time(5.640100ms)]
+angle[8][index(1), score(0.999952), time(6.476600ms)]
+angle[9][index(1), score(0.999999), time(4.610000ms)]
+angle[10][index(1), score(0.999999), time(9.014700ms)]
+---------- step: crnnNet getTextLine ----------
+textLine[0](专业查性别)
+textScores[0]{0.999985 ,0.999461 ,0.998364 ,0.99977 ,0.997252}
+crnnTime[0](17.419500ms)
+textLine[1](A)
+textScores[1]{0.257927}
+crnnTime[1](18.776600ms)
+textLine[2](专业鉴定B超单)
+textScores[2]{0.999959 ,0.999269 ,0.999507 ,0.999311 ,0.995251 ,0.565721 ,0.99951}
+crnnTime[2](12.521400ms)
+textLine[3](名)
+textScores[3]{0.0533817}
+crnnTime[3](3.908200ms)
+textLine[4](超仪)
+textScores[4]{0.608896 ,0.973326}
+crnnTime[4](16.701500ms)
+textLine[5](日邮)
+textScores[5]{0.320443 ,0.300745}
+crnnTime[5](12.058000ms)
+textLine[6](加微信)
+textScores[6]{0.999302 ,0.998028 ,0.994892}
+crnnTime[6](8.503300ms)
+textLine[7](1)
+textScores[7]{0.0599507}
+crnnTime[7](15.399300ms)
+textLine[8](义器查性别)
+textScores[8]{0.944378 ,0.999552 ,0.995717 ,0.822369 ,0.990277}
+crnnTime[8](17.888300ms)
+textLine[9](可邮寄)
+textScores[9]{0.36689 ,0.996735 ,0.985415}
+crnnTime[9](11.271500ms)
+textLine[10](eee)
+textScores[10]{0.86527 ,0.991603 ,0.990645}
+crnnTime[10](17.529600ms)
+=====End detect=====
+FullDetectTime(140.597800ms)
+专业查性别
+A
+专业鉴定B超单
+名
+超仪
+日邮
+加微信
+1
+义器查性别
+可邮寄
+eee
+
+=====Start detect=====
+ScaleParam(sw:740,sh:740,dw:736,dh:736,0.994595,0.994595)
+---------- step: dbNet getTextBoxes ----------
+dbNetTime(40.971000ms)
+TextBox[0](+padding)[score(0.968335),[x: 438, y: 40], [x: 691, y: 298], [x: 625, y: 363], [x: 372, y: 105]]
+TextBox[1](+padding)[score(0.634923),[x: 304, y: 94], [x: 319, y: 99], [x: 314, y: 114], [x: 299, y: 109]]
+TextBox[2](+padding)[score(0.965490),[x: 263, y: 111], [x: 572, y: 458], [x: 496, y: 526], [x: 188, y: 179]]
+TextBox[3](+padding)[score(0.814587),[x: 163, y: 229], [x: 176, y: 232], [x: 172, y: 246], [x: 159, y: 243]]
+TextBox[4](+padding)[score(0.963871),[x: 202, y: 217], [x: 314, y: 334], [x: 258, y: 390], [x: 145, y: 272]]
+TextBox[5](+padding)[score(0.891910),[x: 456, y: 236], [x: 505, y: 273], [x: 480, y: 305], [x: 431, y: 268]]
+TextBox[6](+padding)[score(0.954613),[x: 116, y: 218], [x: 258, y: 404], [x: 172, y: 469], [x: 31, y: 282]]
+TextBox[7](+padding)[score(0.919118),[x: 510, y: 322], [x: 576, y: 322], [x: 576, y: 380], [x: 510, y: 380]]
+TextBox[8](+padding)[score(0.958918),[x: 280, y: 289], [x: 492, y: 526], [x: 415, y: 595], [x: 203, y: 357]]
+TextBox[9](+padding)[score(0.942910),[x: 568, y: 338], [x: 666, y: 425], [x: 626, y: 471], [x: 527, y: 384]]
+TextBox[10](+padding)[score(0.966728),[x: 220, y: 398], [x: 306, y: 502], [x: 255, y: 544], [x: 168, y: 440]]
+---------- step: drawTextBoxes ----------
+---------- step: angleNet getAngles ----------
+angle[0][index(1), score(0.999955), time(2.371800ms)]
+angle[1][index(1), score(0.999242), time(9.209900ms)]
+angle[2][index(1), score(0.999987), time(6.061500ms)]
+angle[3][index(1), score(0.998059), time(7.007600ms)]
+angle[4][index(1), score(0.999786), time(6.643100ms)]
+angle[5][index(1), score(0.999949), time(6.344800ms)]
+angle[6][index(1), score(0.999988), time(4.647800ms)]
+angle[7][index(1), score(0.999956), time(10.911000ms)]
+angle[8][index(1), score(0.999952), time(8.820100ms)]
+angle[9][index(1), score(0.999999), time(9.190100ms)]
+angle[10][index(1), score(0.999999), time(12.877600ms)]
+---------- step: crnnNet getTextLine ----------
+textLine[0](专业查性别)
+textScores[0]{0.999985 ,0.999461 ,0.998364 ,0.99977 ,0.997252}
+crnnTime[0](19.194800ms)
+textLine[1](A)
+textScores[1]{0.257927}
+crnnTime[1](16.586300ms)
+textLine[2](专业鉴定B超单)
+textScores[2]{0.999959 ,0.999269 ,0.999507 ,0.999311 ,0.995251 ,0.565721 ,0.99951}
+crnnTime[2](12.190000ms)
+textLine[3](名)
+textScores[3]{0.0533817}
+crnnTime[3](8.725500ms)
+textLine[4](超仪)
+textScores[4]{0.608896 ,0.973326}
+crnnTime[4](15.983800ms)
+textLine[5](日邮)
+textScores[5]{0.320443 ,0.300745}
+crnnTime[5](7.886000ms)
+textLine[6](加微信)
+textScores[6]{0.999302 ,0.998028 ,0.994892}
+crnnTime[6](13.865600ms)
+textLine[7](1)
+textScores[7]{0.0599507}
+crnnTime[7](14.543400ms)
+textLine[8](义器查性别)
+textScores[8]{0.944378 ,0.999552 ,0.995717 ,0.822369 ,0.990277}
+crnnTime[8](13.191300ms)
+textLine[9](可邮寄)
+textScores[9]{0.36689 ,0.996735 ,0.985415}
+crnnTime[9](5.261600ms)
+textLine[10](eee)
+textScores[10]{0.86527 ,0.991603 ,0.990645}
+crnnTime[10](17.023200ms)
+=====End detect=====
+FullDetectTime(134.482000ms)
+专业查性别
+A
+专业鉴定B超单
+名
+超仪
+日邮
+加微信
+1
+义器查性别
+可邮寄
+eee
+
+=====Start detect=====
+ScaleParam(sw:740,sh:740,dw:736,dh:736,0.994595,0.994595)
+---------- step: dbNet getTextBoxes ----------
+dbNetTime(41.680000ms)
+TextBox[0](+padding)[score(0.968335),[x: 438, y: 40], [x: 691, y: 298], [x: 625, y: 363], [x: 372, y: 105]]
+TextBox[1](+padding)[score(0.634923),[x: 304, y: 94], [x: 319, y: 99], [x: 314, y: 114], [x: 299, y: 109]]
+TextBox[2](+padding)[score(0.965490),[x: 263, y: 111], [x: 572, y: 458], [x: 496, y: 526], [x: 188, y: 179]]
+TextBox[3](+padding)[score(0.814587),[x: 163, y: 229], [x: 176, y: 232], [x: 172, y: 246], [x: 159, y: 243]]
+TextBox[4](+padding)[score(0.963871),[x: 202, y: 217], [x: 314, y: 334], [x: 258, y: 390], [x: 145, y: 272]]
+TextBox[5](+padding)[score(0.891910),[x: 456, y: 236], [x: 505, y: 273], [x: 480, y: 305], [x: 431, y: 268]]
+TextBox[6](+padding)[score(0.954613),[x: 116, y: 218], [x: 258, y: 404], [x: 172, y: 469], [x: 31, y: 282]]
+TextBox[7](+padding)[score(0.919118),[x: 510, y: 322], [x: 576, y: 322], [x: 576, y: 380], [x: 510, y: 380]]
+TextBox[8](+padding)[score(0.958918),[x: 280, y: 289], [x: 492, y: 526], [x: 415, y: 595], [x: 203, y: 357]]
+TextBox[9](+padding)[score(0.942910),[x: 568, y: 338], [x: 666, y: 425], [x: 626, y: 471], [x: 527, y: 384]]
+TextBox[10](+padding)[score(0.966728),[x: 220, y: 398], [x: 306, y: 502], [x: 255, y: 544], [x: 168, y: 440]]
+---------- step: drawTextBoxes ----------
+---------- step: angleNet getAngles ----------
+angle[0][index(1), score(0.999955), time(3.686000ms)]
+angle[1][index(1), score(0.999242), time(4.798200ms)]
+angle[2][index(1), score(0.999987), time(6.693100ms)]
+angle[3][index(1), score(0.998059), time(5.156800ms)]
+angle[4][index(1), score(0.999786), time(4.794000ms)]
+angle[5][index(1), score(0.999949), time(3.338600ms)]
+angle[6][index(1), score(0.999988), time(6.617100ms)]
+angle[7][index(1), score(0.999956), time(10.932400ms)]
+angle[8][index(1), score(0.999952), time(2.745000ms)]
+angle[9][index(1), score(0.999999), time(2.102200ms)]
+angle[10][index(1), score(0.999999), time(9.331000ms)]
+---------- step: crnnNet getTextLine ----------
+textLine[0](专业查性别)
+textScores[0]{0.999985 ,0.999461 ,0.998364 ,0.99977 ,0.997252}
+crnnTime[0](11.937400ms)
+textLine[1](A)
+textScores[1]{0.257927}
+crnnTime[1](12.885300ms)
+textLine[2](专业鉴定B超单)
+textScores[2]{0.999959 ,0.999269 ,0.999507 ,0.999311 ,0.995251 ,0.565721 ,0.99951}
+crnnTime[2](10.492500ms)
+textLine[3](名)
+textScores[3]{0.0533817}
+crnnTime[3](4.902900ms)
+textLine[4](超仪)
+textScores[4]{0.608896 ,0.973326}
+crnnTime[4](16.588100ms)
+textLine[5](日邮)
+textScores[5]{0.320443 ,0.300745}
+crnnTime[5](16.225800ms)
+textLine[6](加微信)
+textScores[6]{0.999302 ,0.998028 ,0.994892}
+crnnTime[6](15.212100ms)
+textLine[7](1)
+textScores[7]{0.0599507}
+crnnTime[7](13.529800ms)
+textLine[8](义器查性别)
+textScores[8]{0.944378 ,0.999552 ,0.995717 ,0.822369 ,0.990277}
+crnnTime[8](18.690900ms)
+textLine[9](可邮寄)
+textScores[9]{0.36689 ,0.996735 ,0.985415}
+crnnTime[9](17.500300ms)
+textLine[10](eee)
+textScores[10]{0.86527 ,0.991603 ,0.990645}
+crnnTime[10](24.567900ms)
+=====End detect=====
+FullDetectTime(130.818400ms)
+专业查性别
+A
+专业鉴定B超单
+名
+超仪
+日邮
+加微信
+1
+义器查性别
+可邮寄
+eee
+
+=====Start detect=====
+ScaleParam(sw:740,sh:740,dw:736,dh:736,0.994595,0.994595)
+---------- step: dbNet getTextBoxes ----------
+dbNetTime(42.157000ms)
+TextBox[0](+padding)[score(0.968335),[x: 438, y: 40], [x: 691, y: 298], [x: 625, y: 363], [x: 372, y: 105]]
+TextBox[1](+padding)[score(0.634923),[x: 304, y: 94], [x: 319, y: 99], [x: 314, y: 114], [x: 299, y: 109]]
+TextBox[2](+padding)[score(0.965490),[x: 263, y: 111], [x: 572, y: 458], [x: 496, y: 526], [x: 188, y: 179]]
+TextBox[3](+padding)[score(0.814587),[x: 163, y: 229], [x: 176, y: 232], [x: 172, y: 246], [x: 159, y: 243]]
+TextBox[4](+padding)[score(0.963871),[x: 202, y: 217], [x: 314, y: 334], [x: 258, y: 390], [x: 145, y: 272]]
+TextBox[5](+padding)[score(0.891910),[x: 456, y: 236], [x: 505, y: 273], [x: 480, y: 305], [x: 431, y: 268]]
+TextBox[6](+padding)[score(0.954613),[x: 116, y: 218], [x: 258, y: 404], [x: 172, y: 469], [x: 31, y: 282]]
+TextBox[7](+padding)[score(0.919118),[x: 510, y: 322], [x: 576, y: 322], [x: 576, y: 380], [x: 510, y: 380]]
+TextBox[8](+padding)[score(0.958918),[x: 280, y: 289], [x: 492, y: 526], [x: 415, y: 595], [x: 203, y: 357]]
+TextBox[9](+padding)[score(0.942910),[x: 568, y: 338], [x: 666, y: 425], [x: 626, y: 471], [x: 527, y: 384]]
+TextBox[10](+padding)[score(0.966728),[x: 220, y: 398], [x: 306, y: 502], [x: 255, y: 544], [x: 168, y: 440]]
+---------- step: drawTextBoxes ----------
+---------- step: angleNet getAngles ----------
+angle[0][index(1), score(0.999955), time(7.139500ms)]
+angle[1][index(1), score(0.999242), time(6.983000ms)]
+angle[2][index(1), score(0.999987), time(7.910500ms)]
+angle[3][index(1), score(0.998059), time(2.504600ms)]
+angle[4][index(1), score(0.999786), time(8.339900ms)]
+angle[5][index(1), score(0.999949), time(4.901100ms)]
+angle[6][index(1), score(0.999988), time(5.011200ms)]
+angle[7][index(1), score(0.999956), time(7.298500ms)]
+angle[8][index(1), score(0.999952), time(7.044800ms)]
+angle[9][index(1), score(0.999999), time(9.085200ms)]
+angle[10][index(1), score(0.999999), time(8.128600ms)]
+---------- step: crnnNet getTextLine ----------
+textLine[0](专业查性别)
+textScores[0]{0.999985 ,0.999461 ,0.998364 ,0.99977 ,0.997252}
+crnnTime[0](18.402100ms)
+textLine[1](A)
+textScores[1]{0.257927}
+crnnTime[1](17.969500ms)
+textLine[2](专业鉴定B超单)
+textScores[2]{0.999959 ,0.999269 ,0.999507 ,0.999311 ,0.995251 ,0.565721 ,0.99951}
+crnnTime[2](11.850900ms)
+textLine[3](名)
+textScores[3]{0.0533817}
+crnnTime[3](11.780900ms)
+textLine[4](超仪)
+textScores[4]{0.608896 ,0.973326}
+crnnTime[4](10.202100ms)
+textLine[5](日邮)
+textScores[5]{0.320443 ,0.300745}
+crnnTime[5](10.604900ms)
+textLine[6](加微信)
+textScores[6]{0.999302 ,0.998028 ,0.994892}
+crnnTime[6](5.602600ms)
+textLine[7](1)
+textScores[7]{0.0599507}
+crnnTime[7](22.926900ms)
+textLine[8](义器查性别)
+textScores[8]{0.944378 ,0.999552 ,0.995717 ,0.822369 ,0.990277}
+crnnTime[8](13.261600ms)
+textLine[9](可邮寄)
+textScores[9]{0.36689 ,0.996735 ,0.985415}
+crnnTime[9](7.831300ms)
+textLine[10](eee)
+textScores[10]{0.86527 ,0.991603 ,0.990645}
+crnnTime[10](16.482200ms)
+=====End detect=====
+FullDetectTime(130.844700ms)
+专业查性别
+A
+专业鉴定B超单
+名
+超仪
+日邮
+加微信
+1
+义器查性别
+可邮寄
+eee
+
+=====Start detect=====
+ScaleParam(sw:740,sh:740,dw:736,dh:736,0.994595,0.994595)
+---------- step: dbNet getTextBoxes ----------
+dbNetTime(42.733200ms)
+TextBox[0](+padding)[score(0.968335),[x: 438, y: 40], [x: 691, y: 298], [x: 625, y: 363], [x: 372, y: 105]]
+TextBox[1](+padding)[score(0.634923),[x: 304, y: 94], [x: 319, y: 99], [x: 314, y: 114], [x: 299, y: 109]]
+TextBox[2](+padding)[score(0.965490),[x: 263, y: 111], [x: 572, y: 458], [x: 496, y: 526], [x: 188, y: 179]]
+TextBox[3](+padding)[score(0.814587),[x: 163, y: 229], [x: 176, y: 232], [x: 172, y: 246], [x: 159, y: 243]]
+TextBox[4](+padding)[score(0.963871),[x: 202, y: 217], [x: 314, y: 334], [x: 258, y: 390], [x: 145, y: 272]]
+TextBox[5](+padding)[score(0.891910),[x: 456, y: 236], [x: 505, y: 273], [x: 480, y: 305], [x: 431, y: 268]]
+TextBox[6](+padding)[score(0.954613),[x: 116, y: 218], [x: 258, y: 404], [x: 172, y: 469], [x: 31, y: 282]]
+TextBox[7](+padding)[score(0.919118),[x: 510, y: 322], [x: 576, y: 322], [x: 576, y: 380], [x: 510, y: 380]]
+TextBox[8](+padding)[score(0.958918),[x: 280, y: 289], [x: 492, y: 526], [x: 415, y: 595], [x: 203, y: 357]]
+TextBox[9](+padding)[score(0.942910),[x: 568, y: 338], [x: 666, y: 425], [x: 626, y: 471], [x: 527, y: 384]]
+TextBox[10](+padding)[score(0.966728),[x: 220, y: 398], [x: 306, y: 502], [x: 255, y: 544], [x: 168, y: 440]]
+---------- step: drawTextBoxes ----------
+---------- step: angleNet getAngles ----------
+angle[0][index(1), score(0.999955), time(6.095000ms)]
+angle[1][index(1), score(0.999242), time(6.991700ms)]
+angle[2][index(1), score(0.999987), time(7.533300ms)]
+angle[3][index(1), score(0.998059), time(2.378200ms)]
+angle[4][index(1), score(0.999786), time(7.444900ms)]
+angle[5][index(1), score(0.999949), time(4.973500ms)]
+angle[6][index(1), score(0.999988), time(4.231400ms)]
+angle[7][index(1), score(0.999956), time(7.119100ms)]
+angle[8][index(1), score(0.999952), time(6.998800ms)]
+angle[9][index(1), score(0.999999), time(7.924100ms)]
+angle[10][index(1), score(0.999999), time(8.456700ms)]
+---------- step: crnnNet getTextLine ----------
+textLine[0](专业查性别)
+textScores[0]{0.999985 ,0.999461 ,0.998364 ,0.99977 ,0.997252}
+crnnTime[0](11.103900ms)
+textLine[1](A)
+textScores[1]{0.257927}
+crnnTime[1](17.825100ms)
+textLine[2](专业鉴定B超单)
+textScores[2]{0.999959 ,0.999269 ,0.999507 ,0.999311 ,0.995251 ,0.565721 ,0.99951}
+crnnTime[2](20.299600ms)
+textLine[3](名)
+textScores[3]{0.0533817}
+crnnTime[3](13.646700ms)
+textLine[4](超仪)
+textScores[4]{0.608896 ,0.973326}
+crnnTime[4](11.870800ms)
+textLine[5](日邮)
+textScores[5]{0.320443 ,0.300745}
+crnnTime[5](7.191600ms)
+textLine[6](加微信)
+textScores[6]{0.999302 ,0.998028 ,0.994892}
+crnnTime[6](5.691100ms)
+textLine[7](1)
+textScores[7]{0.0599507}
+crnnTime[7](15.788500ms)
+textLine[8](义器查性别)
+textScores[8]{0.944378 ,0.999552 ,0.995717 ,0.822369 ,0.990277}
+crnnTime[8](20.648600ms)
+textLine[9](可邮寄)
+textScores[9]{0.36689 ,0.996735 ,0.985415}
+crnnTime[9](18.258500ms)
+textLine[10](eee)
+textScores[10]{0.86527 ,0.991603 ,0.990645}
+crnnTime[10](18.889300ms)
+=====End detect=====
+FullDetectTime(134.202200ms)
+专业查性别
+A
+专业鉴定B超单
+名
+超仪
+日邮
+加微信
+1
+义器查性别
+可邮寄
+eee
+
+=====Start detect=====
+ScaleParam(sw:740,sh:740,dw:736,dh:736,0.994595,0.994595)
+---------- step: dbNet getTextBoxes ----------
+dbNetTime(40.182600ms)
+TextBox[0](+padding)[score(0.968335),[x: 438, y: 40], [x: 691, y: 298], [x: 625, y: 363], [x: 372, y: 105]]
+TextBox[1](+padding)[score(0.634923),[x: 304, y: 94], [x: 319, y: 99], [x: 314, y: 114], [x: 299, y: 109]]
+TextBox[2](+padding)[score(0.965490),[x: 263, y: 111], [x: 572, y: 458], [x: 496, y: 526], [x: 188, y: 179]]
+TextBox[3](+padding)[score(0.814587),[x: 163, y: 229], [x: 176, y: 232], [x: 172, y: 246], [x: 159, y: 243]]
+TextBox[4](+padding)[score(0.963871),[x: 202, y: 217], [x: 314, y: 334], [x: 258, y: 390], [x: 145, y: 272]]
+TextBox[5](+padding)[score(0.891910),[x: 456, y: 236], [x: 505, y: 273], [x: 480, y: 305], [x: 431, y: 268]]
+TextBox[6](+padding)[score(0.954613),[x: 116, y: 218], [x: 258, y: 404], [x: 172, y: 469], [x: 31, y: 282]]
+TextBox[7](+padding)[score(0.919118),[x: 510, y: 322], [x: 576, y: 322], [x: 576, y: 380], [x: 510, y: 380]]
+TextBox[8](+padding)[score(0.958918),[x: 280, y: 289], [x: 492, y: 526], [x: 415, y: 595], [x: 203, y: 357]]
+TextBox[9](+padding)[score(0.942910),[x: 568, y: 338], [x: 666, y: 425], [x: 626, y: 471], [x: 527, y: 384]]
+TextBox[10](+padding)[score(0.966728),[x: 220, y: 398], [x: 306, y: 502], [x: 255, y: 544], [x: 168, y: 440]]
+---------- step: drawTextBoxes ----------
+---------- step: angleNet getAngles ----------
+angle[0][index(1), score(0.999955), time(8.428000ms)]
+angle[1][index(1), score(0.999242), time(7.825800ms)]
+angle[2][index(1), score(0.999987), time(3.706700ms)]
+angle[3][index(1), score(0.998059), time(6.813800ms)]
+angle[4][index(1), score(0.999786), time(4.641500ms)]
+angle[5][index(1), score(0.999949), time(6.364500ms)]
+angle[6][index(1), score(0.999988), time(2.374300ms)]
+angle[7][index(1), score(0.999956), time(7.601000ms)]
+angle[8][index(1), score(0.999952), time(4.616800ms)]
+angle[9][index(1), score(0.999999), time(4.670300ms)]
+angle[10][index(1), score(0.999999), time(8.286600ms)]
+---------- step: crnnNet getTextLine ----------
+textLine[0](专业查性别)
+textScores[0]{0.999985 ,0.999461 ,0.998364 ,0.99977 ,0.997252}
+crnnTime[0](9.947000ms)
+textLine[1](A)
+textScores[1]{0.257927}
+crnnTime[1](13.321200ms)
+textLine[2](专业鉴定B超单)
+textScores[2]{0.999959 ,0.999269 ,0.999507 ,0.999311 ,0.995251 ,0.565721 ,0.99951}
+crnnTime[2](10.049800ms)
+textLine[3](名)
+textScores[3]{0.0533817}
+crnnTime[3](4.030500ms)
+textLine[4](超仪)
+textScores[4]{0.608896 ,0.973326}
+crnnTime[4](16.000900ms)
+textLine[5](日邮)
+textScores[5]{0.320443 ,0.300745}
+crnnTime[5](15.940300ms)
+textLine[6](加微信)
+textScores[6]{0.999302 ,0.998028 ,0.994892}
+crnnTime[6](13.657800ms)
+textLine[7](1)
+textScores[7]{0.0599507}
+crnnTime[7](13.072300ms)
+textLine[8](义器查性别)
+textScores[8]{0.944378 ,0.999552 ,0.995717 ,0.822369 ,0.990277}
+crnnTime[8](18.964000ms)
+textLine[9](可邮寄)
+textScores[9]{0.36689 ,0.996735 ,0.985415}
+crnnTime[9](15.928400ms)
+textLine[10](eee)
+textScores[10]{0.86527 ,0.991603 ,0.990645}
+crnnTime[10](24.623800ms)
+=====End detect=====
+FullDetectTime(127.341500ms)
+专业查性别
+A
+专业鉴定B超单
+名
+超仪
+日邮
+加微信
+1
+义器查性别
+可邮寄
+eee
+
+=====Start detect=====
+ScaleParam(sw:740,sh:740,dw:736,dh:736,0.994595,0.994595)
+---------- step: dbNet getTextBoxes ----------
+dbNetTime(41.998000ms)
+TextBox[0](+padding)[score(0.968335),[x: 438, y: 40], [x: 691, y: 298], [x: 625, y: 363], [x: 372, y: 105]]
+TextBox[1](+padding)[score(0.634923),[x: 304, y: 94], [x: 319, y: 99], [x: 314, y: 114], [x: 299, y: 109]]
+TextBox[2](+padding)[score(0.965490),[x: 263, y: 111], [x: 572, y: 458], [x: 496, y: 526], [x: 188, y: 179]]
+TextBox[3](+padding)[score(0.814587),[x: 163, y: 229], [x: 176, y: 232], [x: 172, y: 246], [x: 159, y: 243]]
+TextBox[4](+padding)[score(0.963871),[x: 202, y: 217], [x: 314, y: 334], [x: 258, y: 390], [x: 145, y: 272]]
+TextBox[5](+padding)[score(0.891910),[x: 456, y: 236], [x: 505, y: 273], [x: 480, y: 305], [x: 431, y: 268]]
+TextBox[6](+padding)[score(0.954613),[x: 116, y: 218], [x: 258, y: 404], [x: 172, y: 469], [x: 31, y: 282]]
+TextBox[7](+padding)[score(0.919118),[x: 510, y: 322], [x: 576, y: 322], [x: 576, y: 380], [x: 510, y: 380]]
+TextBox[8](+padding)[score(0.958918),[x: 280, y: 289], [x: 492, y: 526], [x: 415, y: 595], [x: 203, y: 357]]
+TextBox[9](+padding)[score(0.942910),[x: 568, y: 338], [x: 666, y: 425], [x: 626, y: 471], [x: 527, y: 384]]
+TextBox[10](+padding)[score(0.966728),[x: 220, y: 398], [x: 306, y: 502], [x: 255, y: 544], [x: 168, y: 440]]
+---------- step: drawTextBoxes ----------
+---------- step: angleNet getAngles ----------
+angle[0][index(1), score(0.999955), time(5.482500ms)]
+angle[1][index(1), score(0.999242), time(4.202300ms)]
+angle[2][index(1), score(0.999987), time(6.938700ms)]
+angle[3][index(1), score(0.998059), time(3.804300ms)]
+angle[4][index(1), score(0.999786), time(7.870300ms)]
+angle[5][index(1), score(0.999949), time(3.315100ms)]
+angle[6][index(1), score(0.999988), time(2.097900ms)]
+angle[7][index(1), score(0.999956), time(11.343100ms)]
+angle[8][index(1), score(0.999952), time(6.972100ms)]
+angle[9][index(1), score(0.999999), time(7.570600ms)]
+angle[10][index(1), score(0.999999), time(11.138900ms)]
+---------- step: crnnNet getTextLine ----------
+textLine[0](专业查性别)
+textScores[0]{0.999985 ,0.999461 ,0.998364 ,0.99977 ,0.997252}
+crnnTime[0](18.685100ms)
+textLine[1](A)
+textScores[1]{0.257927}
+crnnTime[1](17.772200ms)
+textLine[2](专业鉴定B超单)
+textScores[2]{0.999959 ,0.999269 ,0.999507 ,0.999311 ,0.995251 ,0.565721 ,0.99951}
+crnnTime[2](11.682400ms)
+textLine[3](名)
+textScores[3]{0.0533817}
+crnnTime[3](8.526400ms)
+textLine[4](超仪)
+textScores[4]{0.608896 ,0.973326}
+crnnTime[4](13.691300ms)
+textLine[5](日邮)
+textScores[5]{0.320443 ,0.300745}
+crnnTime[5](10.613900ms)
+textLine[6](加微信)
+textScores[6]{0.999302 ,0.998028 ,0.994892}
+crnnTime[6](5.358500ms)
+textLine[7](1)
+textScores[7]{0.0599507}
+crnnTime[7](19.866800ms)
+textLine[8](义器查性别)
+textScores[8]{0.944378 ,0.999552 ,0.995717 ,0.822369 ,0.990277}
+crnnTime[8](16.580400ms)
+textLine[9](可邮寄)
+textScores[9]{0.36689 ,0.996735 ,0.985415}
+crnnTime[9](13.245700ms)
+textLine[10](eee)
+textScores[10]{0.86527 ,0.991603 ,0.990645}
+crnnTime[10](16.129600ms)
+=====End detect=====
+FullDetectTime(132.934200ms)
+专业查性别
+A
+专业鉴定B超单
+名
+超仪
+日邮
+加微信
+1
+义器查性别
+可邮寄
+eee
+
+=====Start detect=====
+ScaleParam(sw:740,sh:740,dw:736,dh:736,0.994595,0.994595)
+---------- step: dbNet getTextBoxes ----------
+dbNetTime(40.662700ms)
+TextBox[0](+padding)[score(0.968335),[x: 438, y: 40], [x: 691, y: 298], [x: 625, y: 363], [x: 372, y: 105]]
+TextBox[1](+padding)[score(0.634923),[x: 304, y: 94], [x: 319, y: 99], [x: 314, y: 114], [x: 299, y: 109]]
+TextBox[2](+padding)[score(0.965490),[x: 263, y: 111], [x: 572, y: 458], [x: 496, y: 526], [x: 188, y: 179]]
+TextBox[3](+padding)[score(0.814587),[x: 163, y: 229], [x: 176, y: 232], [x: 172, y: 246], [x: 159, y: 243]]
+TextBox[4](+padding)[score(0.963871),[x: 202, y: 217], [x: 314, y: 334], [x: 258, y: 390], [x: 145, y: 272]]
+TextBox[5](+padding)[score(0.891910),[x: 456, y: 236], [x: 505, y: 273], [x: 480, y: 305], [x: 431, y: 268]]
+TextBox[6](+padding)[score(0.954613),[x: 116, y: 218], [x: 258, y: 404], [x: 172, y: 469], [x: 31, y: 282]]
+TextBox[7](+padding)[score(0.919118),[x: 510, y: 322], [x: 576, y: 322], [x: 576, y: 380], [x: 510, y: 380]]
+TextBox[8](+padding)[score(0.958918),[x: 280, y: 289], [x: 492, y: 526], [x: 415, y: 595], [x: 203, y: 357]]
+TextBox[9](+padding)[score(0.942910),[x: 568, y: 338], [x: 666, y: 425], [x: 626, y: 471], [x: 527, y: 384]]
+TextBox[10](+padding)[score(0.966728),[x: 220, y: 398], [x: 306, y: 502], [x: 255, y: 544], [x: 168, y: 440]]
+---------- step: drawTextBoxes ----------
+---------- step: angleNet getAngles ----------
+angle[0][index(1), score(0.999955), time(2.028500ms)]
+angle[1][index(1), score(0.999242), time(7.191100ms)]
+angle[2][index(1), score(0.999987), time(8.320800ms)]
+angle[3][index(1), score(0.998059), time(5.619800ms)]
+angle[4][index(1), score(0.999786), time(7.856800ms)]
+angle[5][index(1), score(0.999949), time(7.727000ms)]
+angle[6][index(1), score(0.999988), time(3.805800ms)]
+angle[7][index(1), score(0.999956), time(7.530900ms)]
+angle[8][index(1), score(0.999952), time(8.049300ms)]
+angle[9][index(1), score(0.999999), time(7.390100ms)]
+angle[10][index(1), score(0.999999), time(8.166100ms)]
+---------- step: crnnNet getTextLine ----------
+textLine[0](专业查性别)
+textScores[0]{0.999985 ,0.999461 ,0.998364 ,0.99977 ,0.997252}
+crnnTime[0](17.299100ms)
+textLine[1](A)
+textScores[1]{0.257927}
+crnnTime[1](15.156100ms)
+textLine[2](专业鉴定B超单)
+textScores[2]{0.999959 ,0.999269 ,0.999507 ,0.999311 ,0.995251 ,0.565721 ,0.99951}
+crnnTime[2](17.094800ms)
+textLine[3](名)
+textScores[3]{0.0533817}
+crnnTime[3](4.636300ms)
+textLine[4](超仪)
+textScores[4]{0.608896 ,0.973326}
+crnnTime[4](16.389000ms)
+textLine[5](日邮)
+textScores[5]{0.320443 ,0.300745}
+crnnTime[5](16.067200ms)
+textLine[6](加微信)
+textScores[6]{0.999302 ,0.998028 ,0.994892}
+crnnTime[6](9.190900ms)
+textLine[7](1)
+textScores[7]{0.0599507}
+crnnTime[7](15.536300ms)
+textLine[8](义器查性别)
+textScores[8]{0.944378 ,0.999552 ,0.995717 ,0.822369 ,0.990277}
+crnnTime[8](18.316000ms)
+textLine[9](可邮寄)
+textScores[9]{0.36689 ,0.996735 ,0.985415}
+crnnTime[9](11.651300ms)
+textLine[10](eee)
+textScores[10]{0.86527 ,0.991603 ,0.990645}
+crnnTime[10](16.933300ms)
+=====End detect=====
+FullDetectTime(135.031900ms)
+专业查性别
+A
+专业鉴定B超单
+名
+超仪
+日邮
+加微信
+1
+义器查性别
+可邮寄
+eee
+
+=====Start detect=====
+ScaleParam(sw:740,sh:740,dw:736,dh:736,0.994595,0.994595)
+---------- step: dbNet getTextBoxes ----------
+dbNetTime(40.562800ms)
+TextBox[0](+padding)[score(0.968335),[x: 438, y: 40], [x: 691, y: 298], [x: 625, y: 363], [x: 372, y: 105]]
+TextBox[1](+padding)[score(0.634923),[x: 304, y: 94], [x: 319, y: 99], [x: 314, y: 114], [x: 299, y: 109]]
+TextBox[2](+padding)[score(0.965490),[x: 263, y: 111], [x: 572, y: 458], [x: 496, y: 526], [x: 188, y: 179]]
+TextBox[3](+padding)[score(0.814587),[x: 163, y: 229], [x: 176, y: 232], [x: 172, y: 246], [x: 159, y: 243]]
+TextBox[4](+padding)[score(0.963871),[x: 202, y: 217], [x: 314, y: 334], [x: 258, y: 390], [x: 145, y: 272]]
+TextBox[5](+padding)[score(0.891910),[x: 456, y: 236], [x: 505, y: 273], [x: 480, y: 305], [x: 431, y: 268]]
+TextBox[6](+padding)[score(0.954613),[x: 116, y: 218], [x: 258, y: 404], [x: 172, y: 469], [x: 31, y: 282]]
+TextBox[7](+padding)[score(0.919118),[x: 510, y: 322], [x: 576, y: 322], [x: 576, y: 380], [x: 510, y: 380]]
+TextBox[8](+padding)[score(0.958918),[x: 280, y: 289], [x: 492, y: 526], [x: 415, y: 595], [x: 203, y: 357]]
+TextBox[9](+padding)[score(0.942910),[x: 568, y: 338], [x: 666, y: 425], [x: 626, y: 471], [x: 527, y: 384]]
+TextBox[10](+padding)[score(0.966728),[x: 220, y: 398], [x: 306, y: 502], [x: 255, y: 544], [x: 168, y: 440]]
+---------- step: drawTextBoxes ----------
+---------- step: angleNet getAngles ----------
+angle[0][index(1), score(0.999955), time(5.567300ms)]
+angle[1][index(1), score(0.999242), time(5.431200ms)]
+angle[2][index(1), score(0.999987), time(8.687800ms)]
+angle[3][index(1), score(0.998059), time(3.793200ms)]
+angle[4][index(1), score(0.999786), time(5.049400ms)]
+angle[5][index(1), score(0.999949), time(6.563500ms)]
+angle[6][index(1), score(0.999988), time(7.174400ms)]
+angle[7][index(1), score(0.999956), time(10.521700ms)]
+angle[8][index(1), score(0.999952), time(3.948100ms)]
+angle[9][index(1), score(0.999999), time(2.079300ms)]
+angle[10][index(1), score(0.999999), time(10.962000ms)]
+---------- step: crnnNet getTextLine ----------
+textLine[0](专业查性别)
+textScores[0]{0.999985 ,0.999461 ,0.998364 ,0.99977 ,0.997252}
+crnnTime[0](19.053600ms)
+textLine[1](A)
+textScores[1]{0.257927}
+crnnTime[1](20.087600ms)
+textLine[2](专业鉴定B超单)
+textScores[2]{0.999959 ,0.999269 ,0.999507 ,0.999311 ,0.995251 ,0.565721 ,0.99951}
+crnnTime[2](13.208500ms)
+textLine[3](名)
+textScores[3]{0.0533817}
+crnnTime[3](4.763600ms)
+textLine[4](超仪)
+textScores[4]{0.608896 ,0.973326}
+crnnTime[4](18.626300ms)
+textLine[5](日邮)
+textScores[5]{0.320443 ,0.300745}
+crnnTime[5](12.022800ms)
+textLine[6](加微信)
+textScores[6]{0.999302 ,0.998028 ,0.994892}
+crnnTime[6](10.097400ms)
+textLine[7](1)
+textScores[7]{0.0599507}
+crnnTime[7](16.856600ms)
+textLine[8](义器查性别)
+textScores[8]{0.944378 ,0.999552 ,0.995717 ,0.822369 ,0.990277}
+crnnTime[8](18.101900ms)
+textLine[9](可邮寄)
+textScores[9]{0.36689 ,0.996735 ,0.985415}
+crnnTime[9](12.698300ms)
+textLine[10](eee)
+textScores[10]{0.86527 ,0.991603 ,0.990645}
+crnnTime[10](18.954000ms)
+=====End detect=====
+FullDetectTime(137.956700ms)
+专业查性别
+A
+专业鉴定B超单
+名
+超仪
+日邮
+加微信
+1
+义器查性别
+可邮寄
+eee
+
+=====Start detect=====
+ScaleParam(sw:740,sh:740,dw:736,dh:736,0.994595,0.994595)
+---------- step: dbNet getTextBoxes ----------
+dbNetTime(40.378500ms)
+TextBox[0](+padding)[score(0.968335),[x: 438, y: 40], [x: 691, y: 298], [x: 625, y: 363], [x: 372, y: 105]]
+TextBox[1](+padding)[score(0.634923),[x: 304, y: 94], [x: 319, y: 99], [x: 314, y: 114], [x: 299, y: 109]]
+TextBox[2](+padding)[score(0.965490),[x: 263, y: 111], [x: 572, y: 458], [x: 496, y: 526], [x: 188, y: 179]]
+TextBox[3](+padding)[score(0.814587),[x: 163, y: 229], [x: 176, y: 232], [x: 172, y: 246], [x: 159, y: 243]]
+TextBox[4](+padding)[score(0.963871),[x: 202, y: 217], [x: 314, y: 334], [x: 258, y: 390], [x: 145, y: 272]]
+TextBox[5](+padding)[score(0.891910),[x: 456, y: 236], [x: 505, y: 273], [x: 480, y: 305], [x: 431, y: 268]]
+TextBox[6](+padding)[score(0.954613),[x: 116, y: 218], [x: 258, y: 404], [x: 172, y: 469], [x: 31, y: 282]]
+TextBox[7](+padding)[score(0.919118),[x: 510, y: 322], [x: 576, y: 322], [x: 576, y: 380], [x: 510, y: 380]]
+TextBox[8](+padding)[score(0.958918),[x: 280, y: 289], [x: 492, y: 526], [x: 415, y: 595], [x: 203, y: 357]]
+TextBox[9](+padding)[score(0.942910),[x: 568, y: 338], [x: 666, y: 425], [x: 626, y: 471], [x: 527, y: 384]]
+TextBox[10](+padding)[score(0.966728),[x: 220, y: 398], [x: 306, y: 502], [x: 255, y: 544], [x: 168, y: 440]]
+---------- step: drawTextBoxes ----------
+---------- step: angleNet getAngles ----------
+angle[0][index(1), score(0.999955), time(3.679900ms)]
+angle[1][index(1), score(0.999242), time(7.776100ms)]
+angle[2][index(1), score(0.999987), time(3.671100ms)]
+angle[3][index(1), score(0.998059), time(2.038000ms)]
+angle[4][index(1), score(0.999786), time(11.224500ms)]
+angle[5][index(1), score(0.999949), time(7.513000ms)]
+angle[6][index(1), score(0.999988), time(5.375100ms)]
+angle[7][index(1), score(0.999956), time(4.118200ms)]
+angle[8][index(1), score(0.999952), time(9.458400ms)]
+angle[9][index(1), score(0.999999), time(7.493600ms)]
+angle[10][index(1), score(0.999999), time(9.434400ms)]
+---------- step: crnnNet getTextLine ----------
+textLine[0](专业查性别)
+textScores[0]{0.999985 ,0.999461 ,0.998364 ,0.99977 ,0.997252}
+crnnTime[0](18.199900ms)
+textLine[1](A)
+textScores[1]{0.257927}
+crnnTime[1](18.448100ms)
+textLine[2](专业鉴定B超单)
+textScores[2]{0.999959 ,0.999269 ,0.999507 ,0.999311 ,0.995251 ,0.565721 ,0.99951}
+crnnTime[2](11.600300ms)
+textLine[3](名)
+textScores[3]{0.0533817}
+crnnTime[3](7.751900ms)
+textLine[4](超仪)
+textScores[4]{0.608896 ,0.973326}
+crnnTime[4](16.304600ms)
+textLine[5](日邮)
+textScores[5]{0.320443 ,0.300745}
+crnnTime[5](9.196700ms)
+textLine[6](加微信)
+textScores[6]{0.999302 ,0.998028 ,0.994892}
+crnnTime[6](12.193700ms)
+textLine[7](1)
+textScores[7]{0.0599507}
+crnnTime[7](16.182700ms)
+textLine[8](义器查性别)
+textScores[8]{0.944378 ,0.999552 ,0.995717 ,0.822369 ,0.990277}
+crnnTime[8](13.480800ms)
+textLine[9](可邮寄)
+textScores[9]{0.36689 ,0.996735 ,0.985415}
+crnnTime[9](4.879500ms)
+textLine[10](eee)
+textScores[10]{0.86527 ,0.991603 ,0.990645}
+crnnTime[10](16.830000ms)
+=====End detect=====
+FullDetectTime(135.333400ms)
+专业查性别
+A
+专业鉴定B超单
+名
+超仪
+日邮
+加微信
+1
+义器查性别
+可邮寄
+eee
+
+=====Start detect=====
+ScaleParam(sw:740,sh:740,dw:736,dh:736,0.994595,0.994595)
+---------- step: dbNet getTextBoxes ----------
+dbNetTime(40.694000ms)
+TextBox[0](+padding)[score(0.968335),[x: 438, y: 40], [x: 691, y: 298], [x: 625, y: 363], [x: 372, y: 105]]
+TextBox[1](+padding)[score(0.634923),[x: 304, y: 94], [x: 319, y: 99], [x: 314, y: 114], [x: 299, y: 109]]
+TextBox[2](+padding)[score(0.965490),[x: 263, y: 111], [x: 572, y: 458], [x: 496, y: 526], [x: 188, y: 179]]
+TextBox[3](+padding)[score(0.814587),[x: 163, y: 229], [x: 176, y: 232], [x: 172, y: 246], [x: 159, y: 243]]
+TextBox[4](+padding)[score(0.963871),[x: 202, y: 217], [x: 314, y: 334], [x: 258, y: 390], [x: 145, y: 272]]
+TextBox[5](+padding)[score(0.891910),[x: 456, y: 236], [x: 505, y: 273], [x: 480, y: 305], [x: 431, y: 268]]
+TextBox[6](+padding)[score(0.954613),[x: 116, y: 218], [x: 258, y: 404], [x: 172, y: 469], [x: 31, y: 282]]
+TextBox[7](+padding)[score(0.919118),[x: 510, y: 322], [x: 576, y: 322], [x: 576, y: 380], [x: 510, y: 380]]
+TextBox[8](+padding)[score(0.958918),[x: 280, y: 289], [x: 492, y: 526], [x: 415, y: 595], [x: 203, y: 357]]
+TextBox[9](+padding)[score(0.942910),[x: 568, y: 338], [x: 666, y: 425], [x: 626, y: 471], [x: 527, y: 384]]
+TextBox[10](+padding)[score(0.966728),[x: 220, y: 398], [x: 306, y: 502], [x: 255, y: 544], [x: 168, y: 440]]
+---------- step: drawTextBoxes ----------
+---------- step: angleNet getAngles ----------
+angle[0][index(1), score(0.999955), time(4.459200ms)]
+angle[1][index(1), score(0.999242), time(7.385800ms)]
+angle[2][index(1), score(0.999987), time(3.430400ms)]
+angle[3][index(1), score(0.998059), time(2.081300ms)]
+angle[4][index(1), score(0.999786), time(11.533900ms)]
+angle[5][index(1), score(0.999949), time(5.055700ms)]
+angle[6][index(1), score(0.999988), time(8.548900ms)]
+angle[7][index(1), score(0.999956), time(8.272800ms)]
+angle[8][index(1), score(0.999952), time(4.058900ms)]
+angle[9][index(1), score(0.999999), time(6.724300ms)]
+angle[10][index(1), score(0.999999), time(3.539800ms)]
+---------- step: crnnNet getTextLine ----------
+textLine[0](专业查性别)
+textScores[0]{0.999985 ,0.999461 ,0.998364 ,0.99977 ,0.997252}
+crnnTime[0](18.723800ms)
+textLine[1](A)
+textScores[1]{0.257927}
+crnnTime[1](19.277500ms)
+textLine[2](专业鉴定B超单)
+textScores[2]{0.999959 ,0.999269 ,0.999507 ,0.999311 ,0.995251 ,0.565721 ,0.99951}
+crnnTime[2](13.510200ms)
+textLine[3](名)
+textScores[3]{0.0533817}
+crnnTime[3](10.432300ms)
+textLine[4](超仪)
+textScores[4]{0.608896 ,0.973326}
+crnnTime[4](11.625700ms)
+textLine[5](日邮)
+textScores[5]{0.320443 ,0.300745}
+crnnTime[5](11.904700ms)
+textLine[6](加微信)
+textScores[6]{0.999302 ,0.998028 ,0.994892}
+crnnTime[6](4.901500ms)
+textLine[7](1)
+textScores[7]{0.0599507}
+crnnTime[7](20.380700ms)
+textLine[8](义器查性别)
+textScores[8]{0.944378 ,0.999552 ,0.995717 ,0.822369 ,0.990277}
+crnnTime[8](19.509200ms)
+textLine[9](可邮寄)
+textScores[9]{0.36689 ,0.996735 ,0.985415}
+crnnTime[9](6.999800ms)
+textLine[10](eee)
+textScores[10]{0.86527 ,0.991603 ,0.990645}
+crnnTime[10](23.215700ms)
+=====End detect=====
+FullDetectTime(139.394300ms)
+专业查性别
+A
+专业鉴定B超单
+名
+超仪
+日邮
+加微信
+1
+义器查性别
+可邮寄
+eee
+
